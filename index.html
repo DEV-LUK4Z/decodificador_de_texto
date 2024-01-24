@@ -8,15 +8,15 @@
 </head>
 <body>
     <section id="lado_direito">
-        <textarea id="textarea">Digite seu texto</textarea>
+        <textarea type="text" id="texto"></textarea>
      
-        <button>Criptografar</button>
-        <button>Descriptografar</button>
+        <button id="criptografar" onclick="Criptografar()">Criptografar</button>
+        <button id="descriptografar" onclick="Descriptografar()">Descriptografar</button>
 
     </section>
 
     <section id="lado_esquerdo">
-        <div>
+        <div id="resultado">
             <img src="./assets/img/imagem_01.svg" alt="Imagem 01">
             <p>Nenhuma mensagem encontrada</p>
             <p>Digite um texto que você deseja criptografar ou descriptografar</p>
