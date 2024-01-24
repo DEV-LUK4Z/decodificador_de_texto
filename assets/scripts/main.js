@@ -1,14 +1,24 @@
 let texto_area = document.getElementById('texto');
 let resultado = document.getElementById('resultado');
+let novo_texto = [];
+
+
+function mostrar_resultado(){
+    resultado.innerHTML = novo_texto.join('');
+    novo_texto = [];
+}
 
 function Criptografar(){
     let texto = texto_area.value;
-    resultado.innerHTML = texto.replace(/i/g, 'imes').replace(/e/g, 'enter').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');    
+
+    novo_texto.push((texto.replace(/i/g, 'imes')).replace(/e/g, 'enter').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat'));
+    mostrar_resultado();
 }
 
 function Descriptografar(){
     let texto = texto_area.value;
-    resultado.innerHTML = texto.replace(/ai/g, 'a').replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ober/g, 'o').replace(/ufat/g, 'u');
+    novo_texto.push((texto.replace(/ai/g, 'a')).replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ober/g, 'o').replace(/ufat/g, 'u'));
+    mostrar_resultado();
 }
 
 function Copiar_texto(){
