@@ -2,3 +2,84 @@
     margin: 0;
     padding: 0;
 }
+
+main{
+    height: 95vh;
+    display: flex;
+}
+
+button{
+    padding: 1rem;
+    max-width: 15rem;
+    min-width: 15rem;
+    border: none;
+    border-radius: 20px;
+    background: #0066A2;
+    color: #fff;
+    font-size: large;
+    text-decoration: none;
+    cursor: pointer;
+}
+button:hover{
+    background: #289adb;
+}
+
+textarea{
+    min-height: 50%;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.lado_direito{
+    padding: 2rem;
+    border: 1px blue solid;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.button_box{
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+}
+
+.lado_esquerdo{
+    justify-content: space-around;
+    align-items: center;
+    min-width: 30rem;
+}
+
+.resultado_box{
+    max-width: 75%;
+    min-width: 30vw;
+    height: 100vh;
+    padding: 2rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultado > h4, .resultado > p{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+.resultado > img{
+    min-width: 50%;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+}

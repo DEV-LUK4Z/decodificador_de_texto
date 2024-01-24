@@ -7,24 +7,32 @@
    <title>Decodificador de texto</title>
 </head>
 <body>
-    <section id="lado_direito">
-        <textarea type="text" id="texto"></textarea>
-     
-        <button id="criptografar" onclick="Criptografar()">Criptografar</button>
-        <button id="descriptografar" onclick="Descriptografar()">Descriptografar</button>
+    <main>
+        <section class="lado_direito">
+            <textarea type="text" id="texto" placeholder="Digite seu texto"></textarea>
+         
+            <div class="button_box" >
+                <button id="criptografar" onclick="Criptografar()">Criptografar</button>
+                <button id="descriptografar" onclick="Descriptografar()">Descriptografar</button>
+            </div>
+    
+        </section>
+    
+        <section class="lado_esquerdo">
+            <div class="resultado_box">
+                <div class="resultado" id="resultado">
+                    <img src="./assets/img/imagem_01.svg" alt="Imagem 01">
+                    <h4>Nenhuma mensagem encontrada</h4>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+                <button id="copiar" onclick="Copiar_texto()">Copiar</button>
+            </div>
+        </section>
+    </main>
 
-    </section>
-
-    <section id="lado_esquerdo">
-        <div id="resultado">
-            <img src="./assets/img/imagem_01.svg" alt="Imagem 01">
-            <p>Nenhuma mensagem encontrada</p>
-            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-        </div>
-        <button id="copiar" onclick="Copiar_texto()">Copiar</button>
-    </section>
-
-    <footer>Desenvolvido por <strong>Lucas Santos</strong></footer>
+    <footer>
+        <p>Desenvolvido por <strong>Lucas Santos</strong></p>
+    </footer>
 
     <script src="./assets/scripts/main.js"></script>
 </body>
