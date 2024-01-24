@@ -2,6 +2,7 @@ let texto_area = document.getElementById('texto');
 let resultado = document.getElementById('resultado');
 let novo_texto = [];
 
+
 function mostrar_resultado(){
     return resultado.innerHTML = novo_texto.join('');
 }
@@ -37,4 +38,7 @@ function Descriptografar(){
     mostrar_resultado();
 }
 
-
+function Copiar_texto(){
+    navigator.clipboard.writeText(mostrar_resultado())
+    return alert('texto copiado');
+}
