@@ -49,9 +49,6 @@ button:hover{
     color: #000;
 }
 
-.lado_esquerdo{
-}
-
 .lado_esquerdo > textarea{
     padding: 1rem;
     margin-top: 2rem;
