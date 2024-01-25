@@ -11,27 +11,25 @@
         <section class="lado_esquerdo">
             <textarea type="text" id="texto" placeholder="Digite seu texto"></textarea>
          
-            <div class="button_box" >
-                <button id="criptografar" onclick="Criptografar()">Criptografar</button>
-                <button id="descriptografar" onclick="Descriptografar()">Descriptografar</button>
+            <div>
+                <button onclick="Criptografar()">Criptografar</button>
+                <button onclick="Descriptografar()">Descriptografar</button>
+                <button class="sobre" onclick="Sobre()">Sobre</button>
             </div>
-    
         </section>
     
         <section class="lado_direito">
-            <div class="resultado_box">
-                <div class="resultado" id="resultado">
-                    <img src="./assets/img/imagem_01.svg" alt="Imagem 01">
-                    <h4>Nenhuma mensagem encontrada</h4>
-                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-                </div>
-                <button id="copiar" onclick="Copiar_texto()">Copiar</button>
+            <div class="resultado" id="resultado">
+                <img src="./assets/img/imagem_01.svg" alt="Imagem 01">
+                <h4>Nenhuma mensagem encontrada</h4>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
             </div>
+            <button id="copiar" onclick="Copiar_texto()">Copiar</button>
         </section>
     </main>
 
     <footer>
-        <p>Desenvolvido por <a href="https://dev-luk4z.github.io/links-lucas_santos" target="_blank">lucas Santos</a></p>
+        <p>Desenvolvido por <a href="https://dev-luk4z.github.io/links-lucas_santos" target="_blank">Lucas Santos</a></p>
     </footer>
 
     <script src="./assets/scripts/main.js"></script>

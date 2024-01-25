@@ -26,3 +26,6 @@ function Copiar_texto(){
     return alert('texto copiado');
 }
 
+function Sobre(){
+    return alert('Projeto feito para o Desafio da ONE T6 & Alura! \nSITE NÃO RESPONSIVO')
+}
