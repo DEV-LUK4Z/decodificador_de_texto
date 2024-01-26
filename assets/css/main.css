@@ -120,10 +120,16 @@ button:hover{
     }
 
     button{
-        width: 150px;
+        width: 100px;
         height: 40px;
+
+        border-radius: 15px;
     }
 
+    .lado_esquerdo{
+        display: flex;
+        align-items: center;
+    }
     .lado_esquerdo > textarea{
         margin: 1rem 0;
     }
@@ -131,7 +137,7 @@ button:hover{
     .lado_esquerdo > div{
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 10px;
     }
 
     .lado_direito > .resultado{
@@ -149,16 +155,21 @@ button:hover{
     }
 }
 
-@media screen and (max-width: 400px){
-
+@media screen and (max-width: 420px){
+    *{
+        border: 1px solid red;
+    }
+    
     main{
         flex-direction: column;
         align-items: center;
         width: auto;
+        height: auto;
+        margin-bottom: 5rem;
     }
 
     section{
-        width: auto;
+        width: 15rem;
     }
 
     button{
@@ -166,11 +177,19 @@ button:hover{
         font-size: 12px;
     }
 
+    .lado_esquerdo > textarea{
+        width: 10rem;
+    }
     .lado_direito > .resultado{
-        width: 13rem;
+        width: 10rem;
     }
 
     .lado_direito > .resultado h4{
-        font-size: 18px;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .lado_direito > .resultado p{
+        font-size: 12px;
     }
 }
