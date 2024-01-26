@@ -100,3 +100,77 @@ button:hover{
     text-align: center;
     font-size: 18px;
 }
+
+
+
+@media screen and (max-width: 800px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section{
+        width: 80vw;
+        padding: 2px;
+        margin: 10px 0;
+    }
+
+    footer > p{
+        margin-top: 10px;
+    }
+
+    button{
+        width: 150px;
+        height: 40px;
+    }
+
+    .lado_esquerdo > textarea{
+        margin: 1rem 0;
+    }
+
+    .lado_esquerdo > div{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .lado_direito > .resultado{
+        width: 24rem;
+        height: 100px;
+        
+        margin-top: 0;
+        margin-bottom: 1rem;
+
+        align-content: center;
+    }
+
+    .lado_direito > .resultado > img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    section{
+        width: auto;
+    }
+
+    button{
+        width: 5rem;
+        font-size: 12px;
+    }
+
+    .lado_direito > .resultado{
+        width: 13rem;
+    }
+
+    .lado_direito > .resultado h4{
+        font-size: 18px;
+    }
+}
