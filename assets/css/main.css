@@ -3,193 +3,118 @@
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 20px;
 }
 
 main {
     display: flex;
-    height: 90vh;
+    justify-content: space-around;
+    padding: 2rem;
 }
 
-section {
+section{
+    width: 25rem;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-    width: 50%;
-    padding: 30px 20px;
+    align-items: center;
 }
 
-footer {
+footer{
     display: flex;
     justify-content: center;
 }
-footer > p{
-    margin-top: 1rem;
-}
-button {
-    width: 10rem;
+
+button{
+    width: 7rem;
     height: 50px;
-
+    padding: 10px;
+    background-color: #0252dc;
+    color: #fff;
     border: none;
-    border-radius: 20px;
-
+    border-radius: 5px;
     outline: none;
     cursor: pointer;
-
-    background-color: #1e40ff;
-    color: #fff;
-
     font-size: 0.8rem;
 }
-button:hover{
-    background-color: #758aff;
-    color: #000;
-}
 
+.lado_esquerdo{
+    justify-content: space-between;
+}
 .lado_esquerdo > textarea{
-    padding: 1rem;
-    margin-top: 2rem;
-    height: 200px;
-
-    resize: none;
+    width: 100%;
+    height: 50%;
+    padding: .5rem 1rem;
     outline: none;
-
-    border: 1px solid #000000;
+    resize: none;
     border-radius: 10px;
-}
-
-.lado_esquerdo > div > .sobre {
-    background-color: #197951;
-}
-.lado_esquerdo > div > .sobre:hover{
-    background-color: #758aff;
 }
 
 .lado_direito{
-    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
-
 .lado_direito > .resultado{
-    height: 350px;
-    width: 300px;
-    
-    padding: 1rem 2rem;
-    margin-top: 2rem;
-    
-    border-radius: 10px;
-    box-shadow: 3px 3px 2px #919191;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-
+    gap: 10px;
+    height: 20rem;
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    background-color: #0454a3;
     color: #fff;
-    background-color: #598596;
 }
 
 .lado_direito > .resultado > img{
-    width: 300px;
-    height: 200px;
+    width: 10rem;
+    height: 50%;
 }
-
-.lado_direito > .resultado > p{
+.lado_direito > .resultado > h2, .lado_direito > .resultado > span{
     text-align: center;
-    font-size: 18px;
 }
 
-
-
-@media screen and (max-width: 800px){
+@media screen and (max-width: 820px){
     main{
         flex-direction: column;
         align-items: center;
+        gap: 40px;
+    }
+
+    img {
+        display: none;
+    }
+    section{
+        width: 100%;
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 550px){
+    *{
+        font-size: 16px;
     }
 
     section{
-        width: 80vw;
-        padding: 2px;
-        margin: 10px 0;
+        height: 40vh;
     }
 
-    footer > p{
-        margin-top: 10px;
+    .lado_esquerdo > textarea{
+        width: 100%;
+        height: 70%;
     }
-
     button{
         width: 100px;
         height: 40px;
-
-        border-radius: 15px;
-    }
-
-    .lado_esquerdo{
-        display: flex;
-        align-items: center;
-    }
-    .lado_esquerdo > textarea{
-        margin: 1rem 0;
-    }
-
-    .lado_esquerdo > div{
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .lado_direito > .resultado{
-        width: 24rem;
-        height: 100px;
-        
-        margin-top: 0;
-        margin-bottom: 1rem;
-
-        align-content: center;
-    }
-
-    .lado_direito > .resultado > img{
-        display: none;
+        padding: 5px;
     }
 }
 
-@media screen and (max-width: 420px){
-    *{
-        border: 1px solid red;
-    }
-    
-    main{
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-        height: auto;
-        margin-bottom: 5rem;
-    }
-
-    section{
-        width: 15rem;
-    }
-
+@media screen and (max-width: 370px){
     button{
-        width: 5rem;
-        font-size: 12px;
-    }
-
-    .lado_esquerdo > textarea{
-        width: 10rem;
-    }
-    .lado_direito > .resultado{
-        width: 10rem;
-    }
-
-    .lado_direito > .resultado h4{
-        font-size: 16px;
-        text-align: center;
-    }
-    
-    .lado_direito > .resultado p{
-        font-size: 12px;
+        width: 6rem;
     }
 }

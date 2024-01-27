@@ -9,8 +9,7 @@
 <body>
     <main>
         <section class="lado_esquerdo">
-            <textarea type="text" id="texto" placeholder="Digite seu texto"></textarea>
-         
+            <textarea id="texto" placeholder="Digite seu texto"></textarea>
             <div>
                 <button onclick="Criptografar()">Criptografar</button>
                 <button onclick="Descriptografar()">Descriptografar</button>
@@ -21,8 +20,8 @@
         <section class="lado_direito">
             <div class="resultado" id="resultado">
                 <img src="./assets/img/imagem_01.svg" alt="Imagem 01">
-                <h4>Nenhuma mensagem encontrada</h4>
-                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                <h2>Nenhuma mensagem encontrada</h2>
+                <span>Digite um texto que você deseja criptografar ou descriptografar</span>
             </div>
             <button id="copiar" onclick="Copiar_texto()">Copiar</button>
         </section>
